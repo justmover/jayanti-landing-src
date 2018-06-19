@@ -1,0 +1,38 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Jayanti"
+
+[[menu.main]]
+identifier = "home"
+name = "home"
+url = "/home/home"
+weight = 1
+[[menu.main]]
+identifier = "about"
+name = "關於JAYANTI"
+url = "/about/about"
+weight = 2
+[[menu.main]]
+identifier = "mechine"
+name = "氣能掃描"
+url = "/mechine"
+weight = 3
+[[menu.main]]
+identifier = "product"
+name = "產品介紹"
+url = "http://www.jayantihk.com/zh/?post_type=product/"
+weight = 4
+[[menu.main]]
+identifier = "contact"
+name = "銷售點"
+url = "/contact/contact"
+weight = 5
+[[menu.main]]
+identifier = "promotions"
+name = "最新優惠"
+url = "/promotions"
+weight = 6
+[params]
+facebooklink = "https://www.facebook.com/jayanti.hk.shop/"
+instgramlink = "https://www.instagram.com/jayanti.organic/"
+

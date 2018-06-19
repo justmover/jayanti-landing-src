@@ -1,0 +1,268 @@
+.font-15 {
+    font-size: 15px !important;
+}
+.font-20 {
+    font-size: 20px !important;
+}
+.font-25 {
+    font-size: 25px !important;
+}
+
+.margin-15 {
+    margin: 15px;
+}
+
+.black {
+    color: black;
+}
+.white {
+    color: white;
+}
+.bg-black {
+    background-color: black;
+}
+.jayanti-bg-green {
+    background-color: #006738;
+}
+
+.jayanti-logo {
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .jayanti-logo {
+        text-align: left;
+    }
+}
+
+/* Home style */
+.home-container .hot-issues {
+    padding: 2%;
+}
+
+.home-container .hot-issues .title-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.home-container .hot-issues .title-container .title {
+    font-size: 17px;
+    font-weight: bold;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: -12px;
+    padding: 0 3%;
+}
+
+
+.home-container .hot-issues .element-container {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 3%;
+}
+.home-container .hot-issues .element-container .element {
+    width: 100%;
+    position: relative;
+}
+
+.home-container .hot-issues .element-container .element .title {
+    background-color: #D6DF23;
+    opacity: 0.7;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-weight: bold;
+}
+
+.home-container .instgram-container {
+    background-color: #F1E8D6;
+}
+
+.home-container .instgram-container .item-container {
+    margin: 0 auto;
+    padding: 40px;
+    max-width: 1024px;
+    height: 300px;
+    color: #333;
+    background-color: #F1E8D6;
+}
+
+.home-container .instgram-container .item-container .slick-slide {
+    text-align: center;
+    background: white;
+    height: auto !important;
+}
+
+.home-container .instgram-container .item-container .slick-prev:before {
+    color: black;
+    }
+.home-container .instgram-container .item-container .slick-next:before {
+    color: black;
+  }
+
+
+.home-container .instgram-container .item-container .item {
+    width: 100%;
+    margin: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    .home-container .instgram-container .more-container {
+        margin-top: 10% !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home-container .instgram-container .more-container {
+        margin-top: 15% !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .home-container .instgram-container .more-container {
+        margin-top: 0.5% !important; 
+    }
+}
+
+
+.home-container .instgram-container .more-container {
+    margin-top: 0.5%;
+}
+
+.home-container .instgram-container .more-container .more {
+    font-weight: bold;
+    border: none;
+    padding: 5px 20px;
+}
+
+
+/* About style*/
+
+.about-container .content{
+    margin: 0 auto;
+    max-width: 800px;
+    
+}
+
+.about-container .content .title {
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.about-container .content .subTitle{
+    font-size: 31px;
+    font-weight: bold;
+}
+
+.about-container .intro p {
+    font-size: 16px;
+}
+
+.about-container .greater{
+    background-color: #E0ECB9;
+    width: 100%;
+}
+.about-container .greater .container {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.about-container .greater .title {
+    color: #006738;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 3.5%;
+}
+
+
+
+/* Footer style */
+.jayanti-footer {
+    padding: 30px;
+    background-color: #F1E8D6;
+}
+
+.jayanti-footer .copy-right{
+    font-size: 10px;
+}
+
+/* Contact style */
+.contact-container {
+
+}
+
+.contact-container .video-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3.5%;
+}
+
+.contact-container .video-container .title {
+    font-size: 20px !important;
+    font-weight: bold;
+}
+
+.contact-container .video-container .subTitle{
+    font-size: 14px !important;
+    font-weight: bold;
+}
+
+.contact-container .other-contact-container {
+    background-color: #E0ECB9;
+    width: 100%;
+}
+
+.contact-container .other-contact-container .align {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-container .other-contact-container .title {
+    font-weight: bold;
+    color: #006738;
+    font-size: 24px;
+}
+
+.contact-container .other-contact-container .catTitle {
+    color: #006738;
+    font-size: 28px;
+}
+
+.contact-container .other-contact-container .name {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.contact-container .other-contact-container .address {
+    font-size: 14px;
+}
+
+/* Promotions style */
+.promotions-container {
+    width: 100%;
+    padding: 3%;
+
+}
+
+.promotions-container .promotion-element-container  {
+    max-width: 1024px;
+    margin: 0 auto;
+    margin-top: 1.5%;
+    padding: 1%;
+    border: 5px solid #8CC63E;
+}
+
+.promotions-container .promotion-element-container .description  {
+    font-size: 15px;
+}
+.promotions-container .promotion-element-container .postDate  {
+    color: #6D6E70;
+    font-size: 15px;
+}

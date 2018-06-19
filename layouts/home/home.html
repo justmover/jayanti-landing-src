@@ -1,0 +1,131 @@
+{{ define "main" }}
+<div class="home-container">
+    <div>
+        <img src="/img/home/home_banner.jpg" width="100%" height="auto" />
+    </div>
+    <div class="hot-issues">
+        <div class="title-container">
+            <span class="title">
+                HOT ISSUES
+            </span>
+            <hr color="black">
+        </div>
+        <div class="row element-container">
+            <div class="col-md">
+                <a href="{{.Params.hot1url}}" class="black">
+                    <div class="element text-center">
+                        <img src="{{.Params.hot1image}}" width="100%" height="auto" />
+                        <span class="title">
+                            {{.Params.hot1title}}
+                        </span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md">
+                <a href="{{.Params.hot2url}}" class="black">
+                    <div class="element text-center">
+                        <img src="{{.Params.hot2image}}" width="100%" height="auto" />
+                        <span class="title">
+                            {{.Params.hot2title}}
+                        </span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md">
+                <a href="{{.Params.hot3url}}" class="black">
+                    <div class="element text-center">
+                        <img src="{{.Params.hot3image}}" width="100%" height="auto" />
+                        <span class="title">
+                            {{.Params.hot3title}}
+                        </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <section class="instgram-container">
+        <div class="item-container">
+            <div class="responsive row" id="instgram-photo">
+            </div>
+        </div>
+        <div class="text-center more-container">
+            <a href={{.Site.Params.instgramlink}} target="_blank">
+                <button class="more bg-black white">
+                    <i class="fa fa-instagram font-20"></i><span>查看更多</span>
+                </button>
+            </a>
+        </div>
+    </section>
+</div>
+
+<script>
+    // add image to html template
+    function initCarousel() {
+        instgramItems.forEach(item =>
+            $('#instgram-photo').append("<div class='item'><a target='_blank' href='" + item.url + "'><img width='100%' height='auto' src='" + item.photoUrl + "'></a></div>")
+        );
+        $('.responsive').slick({
+            dots: true,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 5,
+            slidesToScroll: 5,
+            adaptiveHeight: true,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+    };
+    // get image photos
+    var token = '7569874127.df24bc9.dc4d32699019445e8cdf744cc87db4b1',
+        instgramItems = [],
+        num_photos = 20;
+
+    $.ajax({
+        url: 'https://api.instagram.com/v1/users/self/media/recent',
+        dataType: 'jsonp',
+        type: 'GET',
+        data: { access_token: token, count: num_photos },
+        success: function (data) {
+            console.log(data);
+            for (x in data.data) {
+                if (data.data[x].type == 'image') {
+                    instgramItems.push({
+                        url: data.data[x].link,
+                        photoUrl: data.data[x].images.low_resolution.url
+                    });
+                }
+            }
+            initCarousel();
+        },
+        error: function (data) {
+            console.log(data);
+        }
+    });
+</script> {{ end }}
