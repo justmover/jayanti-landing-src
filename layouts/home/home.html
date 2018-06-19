@@ -23,8 +23,16 @@
             </div>
             <div class="col-md">
                 <a href="{{.Params.hot2url}}" class="black">
-                    <div class="element text-center">
-                        <img src="{{.Params.hot2image}}" width="100%" height="auto" />
+                    <div class="element text-center fader">
+                        {{ with .Site.GetPage "section" "promotions" }}
+                            {{ range $index, $content := sort .Pages ".Weight" "desc" }}
+                                {{ if eq $index 0 }}
+                                <img src="{{$content.Params.image}}" width="100%" height="auto" style="display: block;"/>
+                                {{ else }}
+                                <img src="{{$content.Params.image}}" width="100%" height="auto"/>
+                                {{ end }}
+                            {{ end }}
+                        {{ end }}
                         <span class="title">
                             {{.Params.hot2title}}
                         </span>
@@ -43,7 +51,6 @@
             </div>
         </div>
     </div>
-
     <section class="instgram-container">
         <div class="item-container">
             <div class="responsive row" id="instgram-photo">
@@ -52,7 +59,8 @@
         <div class="text-center more-container">
             <a href={{.Site.Params.instgramlink}} target="_blank">
                 <button class="more bg-black white">
-                    <i class="fa fa-instagram font-20"></i><span>查看更多</span>
+                    <i class="fa fa-instagram font-20"></i>
+                    <span>查看更多</span>
                 </button>
             </a>
         </div>
@@ -128,4 +136,15 @@
             console.log(data);
         }
     });
-</script> {{ end }}
+    // For promotions function
+    var $imgs = $(".fader").find("img"),
+        i = 0;
+
+    function changeImage() {
+        var next = (++i % $imgs.length);
+        $($imgs.get(next - 1)).fadeOut(50);
+        $($imgs.get(next)).fadeIn(500);
+    }
+    var interval = setInterval(changeImage, 5000);
+</script>
+{{ end }}

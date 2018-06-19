@@ -63,11 +63,23 @@
     margin: 0 auto;
     margin-top: 3%;
 }
+
+
 .home-container .hot-issues .element-container .element {
     width: 100%;
     position: relative;
 }
 
+.home-container .hot-issues .element-container .fader {
+    display: inline-block;
+}
+
+.home-container .hot-issues .element-container .fader>img {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: none;
+}
 .home-container .hot-issues .element-container .element .title {
     background-color: #D6DF23;
     opacity: 0.7;
