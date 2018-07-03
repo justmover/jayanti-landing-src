@@ -1,12 +1,16 @@
 <html>
 {{ partial "head" . }}
     <body>
-        <div>           
-            {{ partial "navigation" . }}
+        <div>
+            {{ if ne .Page.Title "GDV" }} 
+                {{ partial "navigation" . }}
+            {{ end }}
             <main class="content" role="main">
                 {{ block "main" . }}{{ end }}
             </main>
-            {{ partial "footer" . }}
+            {{ if ne .Page.Title "GDV" }} 
+                {{ partial "footer" . }}
+            {{ end }}
         </div>
     </body>
 </html>

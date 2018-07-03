@@ -12,7 +12,7 @@
         </div>
         <div class="row element-container">
             <div class="col-md">
-                <a href="{{.Params.hot1url}}" class="black">
+                <a href="{{.Params.hot1url}}" class="black" target="_blank">
                     <div class="element text-center">
                         <img src="{{.Params.hot1image}}" width="100%" height="auto" />
                         <span class="title">
@@ -52,6 +52,12 @@
         </div>
     </div>
     <section class="instgram-container">
+        <div class="text-center">
+            <b class="font-20">
+                #JAYANTI.ORGANIC ON INSTAGRAM <br>
+            </b>
+            各款天然有機產品 由意大利直送香港
+        </div>
         <div class="item-container">
             <div class="responsive row" id="instgram-photo">
             </div>
@@ -142,8 +148,9 @@
 
     function changeImage() {
         var next = (++i % $imgs.length);
-        $($imgs.get(next - 1)).fadeOut(50);
+        $($imgs.get(next - 1)).fadeOut(25);
         $($imgs.get(next)).fadeIn(500);
+        
     }
     var interval = setInterval(changeImage, 5000);
 </script>

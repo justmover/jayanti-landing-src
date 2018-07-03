@@ -4,7 +4,7 @@ title = "Jayanti"
 
 [[menu.main]]
 identifier = "home"
-name = "home"
+name = "首頁"
 url = "/home/home"
 weight = 1
 [[menu.main]]
@@ -13,9 +13,9 @@ name = "關於JAYANTI"
 url = "/about/about"
 weight = 2
 [[menu.main]]
-identifier = "mechine"
+identifier = "gdv"
 name = "氣能掃描"
-url = "/mechine"
+url = "/gdv/gdv"
 weight = 3
 [[menu.main]]
 identifier = "product"

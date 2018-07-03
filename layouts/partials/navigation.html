@@ -12,6 +12,11 @@
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         {{ range .Site.Menus.main }} {{ $menuName := .Name }} {{ $menuTitle := .Identifier }}
             <li class="nav-item active">
+                {{ if eq $menuTitle "gdv" }}
+                <a href="{{ .URL}}" class="nav-link" id="menu-{{$menuTitle}}" target="_blank">
+                    {{ $menuName }}
+                </a>
+                {{ else }}
                 <a href="{{ .URL}}" class="nav-link" id="menu-{{$menuTitle}}">
                     {{ if eq $menuTitle "home"}}
                         <i class="fa fa-home font-20"></i>
@@ -19,6 +24,7 @@
                         {{ $menuName }}
                     {{end}}
                 </a>
+                {{end}}
             </li>
         {{end}}
         </ul>
