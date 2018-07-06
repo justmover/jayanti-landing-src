@@ -1,12 +1,11 @@
 ---
-date : "2018-05-31T04:23:46+00:00"
-title : "有機全效修復精華"
-image : "/img/promotions/fb-2018-06-05.jpg"
-weight : 4
-posteddate : "5/6/2018"
+date: 2018-05-31 04:23:46 +0000
+title: 有機全效修復精華
+image: "/img/promotions/fb-2018-06-05.jpg"
+weight: 4
+posteddate: 5/6/2018
 
 ---
-
 【6月折扣】有機全效修復精華30ml
 優惠價$350/支 (原價$500)
 
