@@ -23,6 +23,6 @@ fields:
   name: posteddate
 pages:
 - content/promotions/promotion3.md
-- content/promotions/promotion1.md
 - content/promotions/promotion2.md
+- content/promotions/promotion1.md
 - content/promotions/promotion4.md
