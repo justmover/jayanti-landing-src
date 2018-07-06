@@ -17,5 +17,3 @@ fields:
 - type: text
   name: posteddate
   label: posteddate
-pages:
-- content/promotions/test.md
