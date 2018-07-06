@@ -1,6 +1,12 @@
-baseURL = "http://example.org/"
+baseURL = "https://jayanti.justmove.hk"
 languageCode = "en-us"
 title = "Jayanti"
+
+[params]
+  author = "Just Move Limited"
+  description = "全手工製作、百分百天然的非一般產品"
+  facebooklink = "https://www.facebook.com/jayanti.hk.shop/"
+  instgramlink = "https://www.instagram.com/jayanti.organic/"
 
 [[menu.main]]
 identifier = "home"
@@ -32,7 +38,4 @@ identifier = "promotions"
 name = "最新優惠"
 url = "/promotions"
 weight = 6
-[params]
-facebooklink = "https://www.facebook.com/jayanti.hk.shop/"
-instgramlink = "https://www.instagram.com/jayanti.organic/"
 
