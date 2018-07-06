@@ -1,6 +1,21 @@
 ---
 hide_body: false
 is_partial: false
-fields: []
+fields:
+- type: text
+  name: title
+  label: Promotion TITLE
+- type: text
+  label: Date
+  name: date
+- type: file
+  label: Image
+  name: image
+- type: text
+  label: Weight
+  name: weight
+- type: text
+  name: posteddate
+  label: posteddate
 pages:
 - content/promotions/test.md
