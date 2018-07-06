@@ -1,5 +1,5 @@
 ---
-date: 2018-05-31 04:23:46 +0000
+date: 2018-01-22 13:43:46 +0800
 title: Jayanti Alum Stone Spray (天然抗菌抑味噴霧)
 image: "/img/promotions/fb-2018-5-23_2.jpg"
 weight: 1
