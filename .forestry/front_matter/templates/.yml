@@ -10,5 +10,14 @@ fields:
 - name: date
   label: Date
   type: datetime
-  hidden: false
+  hidden: true
   default: ''
+- type: file
+  name: image
+  label: image
+- type: text
+  name: weight
+  label: weight
+- type: text
+  label: posteddate
+  name: posteddate
