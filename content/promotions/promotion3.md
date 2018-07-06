@@ -1,12 +1,11 @@
 ---
-date : "2018-05-31T04:23:46+00:00"
-title : "有機花露系列"
-image : "/img/promotions/fb-2018-5-30.jpg"
-weight : 3
-posteddate : "5/6/2018"
+date: 2018-05-31 04:23:46 +0000
+title: 有機花露系列
+image: "/img/promotions/fb-2018-5-30.jpg"
+weight: 3
+posteddate: 5/6/2018
 
 ---
-
 有機花露系列-特價每支$180 (原價$250)
 
 花露是精油在蒸餾萃取過程中留下來的水,是精油中可溶於水的成份。除了含有微量精油之外,
