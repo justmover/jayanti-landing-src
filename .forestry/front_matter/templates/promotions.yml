@@ -29,5 +29,6 @@ fields:
   default: ''
 pages:
 - content/promotions/promotion1.md
+- content/promotions/promotion2.md
 - content/promotions/_index.md
 - content/promotions/promotion4.md
