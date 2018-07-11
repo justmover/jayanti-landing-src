@@ -1,4 +1,5 @@
 ---
+label: Promotions template
 hide_body: false
 is_partial: false
 fields:
@@ -25,4 +26,5 @@ pages:
 - content/promotions/promotion3.md
 - content/promotions/promotion2.md
 - content/promotions/promotion1.md
+- content/promotions/test.md
 - content/promotions/promotion4.md
