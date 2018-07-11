@@ -1,6 +1,5 @@
 +++
 date = "2018-07-11T05:01:00+00:00"
-draft = true
 image = "/uploads/fb-2018-6-28_8th_anniversary.jpg"
 posteddate = ""
 title = "Jayanti賽雅媞8周年"
