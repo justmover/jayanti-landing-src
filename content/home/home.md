@@ -9,6 +9,6 @@ hot2image: "/img/promotions/fb-2018-5-30.jpg"
 hot2title: "最新優惠"
 hot2url: "/promotions"
 hot3image: "/img/home/shop.jpg"
-hot3title: "賽雅緹有機美康站"
+hot3title: "賽雅媞有機美康站"
 hot3url: "/contact/contact"
 ---
