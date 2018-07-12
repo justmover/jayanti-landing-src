@@ -2,13 +2,13 @@
 {{ partial "head" . }}
     <body>
         <div>
-            {{ if ne .Page.Title "GDV" }} 
+            {{ if ne .Page.Title "氣能掃描" }} 
                 {{ partial "navigation" . }}
             {{ end }}
             <main class="content" role="main">
                 {{ block "main" . }}{{ end }}
             </main>
-            {{ if ne .Page.Title "GDV" }} 
+            {{ if ne .Page.Title "氣能掃描" }} 
                 {{ partial "footer" . }}
             {{ end }}
         </div>
