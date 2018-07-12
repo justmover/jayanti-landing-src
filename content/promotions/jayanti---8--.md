@@ -1,6 +1,6 @@
 +++
 date = "2018-07-11T05:01:00+00:00"
-image = "/uploads/fb-2018-6-28_8th_anniversary.jpg"
+image = "/uploads/fb-2018-6-28_8th_anniversary2.jpg"
 posteddate = ""
 title = "Jayanti賽雅媞8周年"
 weight = 8
@@ -21,4 +21,4 @@ weight = 8
 
  D) $2,000-$2,500 嫩白精華30ml 或 淨化精華30ml (價值$700-$880)
 
-  優惠期由即日起至30/7 
+  優惠期由即日起至30/7
