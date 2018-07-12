@@ -127,7 +127,7 @@
         type: 'GET',
         data: { access_token: token, count: num_photos },
         success: function (data) {
-            console.log(data);
+            // console.log(data);
             for (x in data.data) {
                 if (data.data[x].type == 'image') {
                     instgramItems.push({
@@ -139,7 +139,7 @@
             initCarousel();
         },
         error: function (data) {
-            console.log(data);
+            // console.log(data);
         }
     });
     // For promotions function
