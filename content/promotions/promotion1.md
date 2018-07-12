@@ -4,6 +4,7 @@ title: Jayanti Alum Stone Spray (天然抗菌抑味噴霧)
 image: "/img/promotions/fb-2018-5-23_2.jpg"
 weight: 1
 posteddate: 1/6/2018
+draft: true
 
 ---
 火辣辣既夏天又黎喇!Jayanti 準備左夏日3寶俾大家!而家仲做緊優惠!件件都系$100彭彭聲
