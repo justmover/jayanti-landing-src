@@ -1,7 +1,7 @@
 +++
 date = "2018-07-11T05:01:00+00:00"
 image = "/uploads/fb-2018-6-28_8th_anniversary2.jpg"
-posteddate = ""
+posteddate = "29/06/2018"
 title = "Jayanti賽雅媞8周年"
 weight = 8
 
