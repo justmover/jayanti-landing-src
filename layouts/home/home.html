@@ -152,6 +152,8 @@
         $($imgs.get(next)).fadeIn(500);
         
     }
-    var interval = setInterval(changeImage, 5000);
+    if($imgs.length > 1) {
+        var interval = setInterval(changeImage, 5000);
+    }
 </script>
 {{ end }}
