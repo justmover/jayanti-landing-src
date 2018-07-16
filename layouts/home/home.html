@@ -52,11 +52,16 @@
         </div>
     </div>
     <section class="instgram-container">
-        <div class="text-center">
+        <div class="text-center padding-top-25">
             <b class="font-20">
-                #JAYANTI.ORGANIC ON INSTAGRAM <br>
+                <i class="fa fa-instagram font-20"></i>#JAYANTI.ORGANIC ON INSTAGRAM <br>
             </b>
-            各款天然有機產品 由意大利直送香港
+            <div>
+                各款天然有機產品 由意大利直送香港
+            </div>
+            <!-- instgram followers -->
+            <div id="instgram-followers">
+            </div>
         </div>
         <div class="item-container">
             <div class="responsive row" id="instgram-photo">
@@ -77,7 +82,7 @@
     // add image to html template
     function initCarousel() {
         instgramItems.forEach(item =>
-            $('#instgram-photo').append("<div class='item'><a target='_blank' href='" + item.url + "'><img width='100%' height='auto' src='" + item.photoUrl + "'></a></div>")
+            $('#instgram-photo').append("<div class='item'><a target='_blank' href='" + item.url + "'><img width='100%' height='auto' src='" + item.photoUrl + "'></a><div class='likesCount text-left'><i class='fa fa-heart-o black font-15'></i><span class='black'>" + item.likes + "</span></div></div>")
         );
         $('.responsive').slick({
             dots: true,
@@ -119,8 +124,9 @@
     // get image photos
     var token = '7569874127.df24bc9.dc4d32699019445e8cdf744cc87db4b1',
         instgramItems = [],
-        num_photos = 20;
-
+        num_photos = 20,
+        followers;
+    // Get instgram photo
     $.ajax({
         url: 'https://api.instagram.com/v1/users/self/media/recent',
         dataType: 'jsonp',
@@ -132,11 +138,27 @@
                 if (data.data[x].type == 'image') {
                     instgramItems.push({
                         url: data.data[x].link,
-                        photoUrl: data.data[x].images.low_resolution.url
+                        photoUrl: data.data[x].images.low_resolution.url,
+                        likes: data.data[x].likes.count
                     });
                 }
             }
             initCarousel();
+        },
+        error: function (data) {
+            // console.log(data);
+        }
+    });
+    // Get follows
+    $.ajax({
+        url: 'https://api.instagram.com/v1/users/self',
+        dataType: 'jsonp',
+        type: 'GET',
+        data: { access_token: token },
+        success: function (data) {
+            followers = data.data.counts.followed_by;
+            // console.log(data);
+            $('#instgram-followers').append("<span class='black'>" + followers + "&nbsp;followers</span>")
         },
         error: function (data) {
             // console.log(data);
@@ -148,9 +170,8 @@
 
     function changeImage() {
         var next = (++i % $imgs.length);
-        $($imgs.get(next - 1)).fadeOut(25);
-        $($imgs.get(next)).fadeIn(500);
-        
+        $($imgs.get(next - 1)).fadeOut(500);
+        $($imgs.get(next)).delay(500).fadeIn(500);
     }
     if($imgs.length > 1) {
         var interval = setInterval(changeImage, 5000);
