@@ -1,6 +1,5 @@
 +++
 date = "2018-07-20T08:40:56+00:00"
-draft = true
 image = "/uploads/fb-2018-7-13.jpg"
 posteddate = "20/7/2018"
 title = "Jayanti面部及身體護埋系列"
