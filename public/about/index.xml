@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abouts on Jayanti</title>
+    <link>https://jayanti.justmove.hk/about/</link>
+    <description>Recent content in Abouts on Jayanti</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 22 Jan 2018 13:43:46 +0800</lastBuildDate>
+    
+	<atom:link href="https://jayanti.justmove.hk/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>關於JAYANTI</title>
+      <link>https://jayanti.justmove.hk/about/about/</link>
+      <pubDate>Mon, 22 Jan 2018 13:43:46 +0800</pubDate>
+      
+      <guid>https://jayanti.justmove.hk/about/about/</guid>
+      <description>Jayanti 賽雅媞 – 神擷之物、純粹有機美顏,完美優質的有機天然護理產品,分別在意大利、 法國、 敘利亞由藝術工匠專責生產。整個生產過程通過了有機認證,絕對自然和環保。 專注顧 客的需要,所有&amp;rdquo;Jayanti - 賽雅媞&amp;rdquo;產品的外包裝都註明原產地和清晰簡明資料。
+我們對保護環境的承諾是堅持使用100%可循環再造的包裝。 我們最大的滿足就是為每位顧客提供 與自然和諧並存、最優質的產品。
+Jayanti continuosly developing its range of 100% handmade and environmentally friendly prod- ucts, choosing to create a line of high quality products for the body, face and home, made exclu- sively by artisan workshops in Italy and France. The entire production is certified organic using, natural and environmentally friendly products.
+Each box indicates the country of origin , clear and concise information that we consider essen- tial to our customers.</description>
+    </item>
+    
+  </channel>
+</rss>
