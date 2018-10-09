@@ -23,6 +23,7 @@ fields:
   label: posteddate
   name: posteddate
 pages:
+- content/promotions/13.md
 - content/promotions/12.md
 - content/promotions/11.md
 - content/promotions/10.md
