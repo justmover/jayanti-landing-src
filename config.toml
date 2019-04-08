@@ -26,7 +26,7 @@ weight = 3
 [[menu.main]]
 identifier = "product"
 name = "產品介紹"
-url = "http://www.jayantihk.com/zh/?post_type=product/"
+url = "https://justore.jayantihk.com/"
 weight = 4
 [[menu.main]]
 identifier = "contact"
