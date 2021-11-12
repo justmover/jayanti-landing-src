@@ -38,4 +38,9 @@ identifier = "promotions"
 name = "最新優惠"
 url = "/promotions"
 weight = 6
+[[menu.main]]
+identifier = "english"
+name = "English"
+url = "http://www.jayanti.eu/"
+weight = 7
 
