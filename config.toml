@@ -5,8 +5,9 @@ title = "Jayanti"
 [params]
   author = "Just Move Limited"
   description = "全手工製作、百分百天然的非一般產品"
-  facebooklink = "https://www.facebook.com/jayanti.hk.shop/"
+  facebooklink = "https://www.facebook.com/jayanti.hk"
   instgramlink = "https://www.instagram.com/jayanti.organic/"
+  youtubelink = "https://www.youtube.com/@jayanti5462"
 
 [[menu.main]]
 identifier = "home"
@@ -30,17 +31,12 @@ url = "https://product.jayantihk.com/"
 weight = 4
 [[menu.main]]
 identifier = "contact"
-name = "銷售點"
+name = "公司資料"
 url = "/contact/contact"
 weight = 5
-[[menu.main]]
-identifier = "promotions"
-name = "最新優惠"
-url = "/promotions"
-weight = 6
 [[menu.main]]
 identifier = "english"
 name = "English"
 url = "http://www.jayanti.eu/"
-weight = 7
+weight = 6
 
