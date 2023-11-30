@@ -11,44 +11,20 @@
             <hr color="black">
         </div>
         <div class="row element-container">
-            <div class="col-md">
-                <a href="{{.Params.hot1url}}" class="black" target="_blank">
-                    <div class="element text-center">
-                        <img src="{{.Params.hot1image}}" width="100%" height="auto" />
-                        <span class="title">
-                            {{.Params.hot1title}}
-                        </span>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md">
-                <a href="{{.Params.hot2url}}" class="black">
-                    <div class="element text-center fader">
-                        {{ with .Site.GetPage "section" "promotions" }}
-                            {{ range $index, $content := sort .Pages ".Weight" "desc" }}
-                                {{ if eq $index 0 }}
-                                <img src="{{$content.Params.image}}" width="100%" height="auto" style="display: block;"/>
-                                {{ else }}
-                                <img src="{{$content.Params.image}}" width="100%" height="auto"/>
-                                {{ end }}
-                            {{ end }}
-                        {{ end }}
-                        <span class="title">
-                            {{.Params.hot2title}}
-                        </span>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md">
-                <a href="{{.Params.hot3url}}" class="black">
-                    <div class="element text-center">
-                        <img src="{{.Params.hot3image}}" width="100%" height="auto" />
-                        <span class="title">
-                            {{.Params.hot3title}}
-                        </span>
-                    </div>
-                </a>
-            </div>
+            <!-- Loop the issue itmes data folder -->
+            
+            {{ range .Site.Data.issues }}
+                <div class="col-md">
+                    <a href="{{.url}}" class="black" target="_blank">
+                        <div class="element text-center">
+                            <img src="{{.image}}" width="100%" height="auto" />
+                            <span class="title">
+                                {{.title}}
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            {{ end }}
         </div>
     </div>
     <section class="instgram-container">
